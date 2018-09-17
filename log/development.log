@@ -1,0 +1,429 @@
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:25:49 -0300
+Processing by ApplicationController#index as HTML
+Completed 406 Not Acceptable in 2138ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (ApplicationController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+httparty (0.16.2) lib/httparty/response.rb:33:in `tap'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:27:18 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1255ms (Views: 335.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:27:52 -0300
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 2681ms (ActiveRecord: 0.0ms)
+
+
+  
+EOFError (end of file reached):
+  
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:28:22 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1033ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:28:25 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 939ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:28:39 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1038ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:31:32 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 1778ms (Views: 66.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:33:16 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1217ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:36:50 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1174ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:37:53 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1263ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:42:35 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 1935ms (Views: 294.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:44:14 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (71.6ms)
+Completed 200 OK in 1889ms (Views: 110.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:46:39 -0300
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 1689ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (private method `select' called for <RestClient::Response 200 "[{\"symbol\":...">:RestClient::Response):
+  
+app/services/iextrading.rb:9:in `symbols'
+app/controllers/application_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:47:11 -0300
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 1668ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for <RestClient::Response 200 "[{\"symbol\":...">:RestClient::Response
+Did you mean?  tap):
+  
+app/services/iextrading.rb:9:in `symbols'
+app/controllers/application_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:47:24 -0300
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 1627ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `response' for <RestClient::Response 200 "[{\"symbol\":...">:RestClient::Response
+Did you mean?  respond_to?):
+  
+app/services/iextrading.rb:8:in `symbols'
+app/controllers/application_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:48:18 -0300
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 1772ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `map' for #<String:0x00007febc26e36a0>
+Did you mean?  tap):
+  
+app/services/iextrading.rb:9:in `symbols'
+app/controllers/application_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:48:35 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 1674ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:49:09 -0300
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 1638ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (class or module required):
+  
+app/services/iextrading.rb:9:in `is_a?'
+app/services/iextrading.rb:9:in `symbols'
+app/controllers/application_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:49:21 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1624ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:51:37 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 2008ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:51:57 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1863ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:52:10 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1872ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:54:18 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1872ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:55:04 -0300
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 1330ms (ActiveRecord: 0.0ms)
+
+
+  
+RestClient::NotFound (404 Not Found):
+  
+app/services/iextrading.rb:8:in `symbols'
+app/controllers/application_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:55:20 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 3687ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:55:39 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1874ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:57:41 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1670ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:57:48 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (227.6ms)
+Completed 200 OK in 2046ms (Views: 261.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:58:07 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (319.5ms)
+Completed 500 Internal Server Error in 2763ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `preaty_print' for #<#<Class:0x00007febbeec4f30>:0x00007febc1957ec8>
+Did you mean?  pretty_print):
+    1: <%= preaty_print @iex %>
+  
+app/views/application/index.html.erb:1:in `_app_views_application_index_html_erb___3176417107290355059_70325270949100'
+Started GET "/" for 127.0.0.1 at 2018-09-17 00:58:32 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (29.0ms)
+Completed 500 Internal Server Error in 2153ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pp_object' for #<String:0x00007febc1f7b570>):
+    1: <%= pretty_print @iex %>
+  
+app/views/application/index.html.erb:1:in `_app_views_application_index_html_erb___3176417107290355059_70325274133320'
+Started GET "/" for 127.0.0.1 at 2018-09-17 01:00:57 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (96.4ms)
+Completed 200 OK in 4443ms (Views: 134.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 01:01:18 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (4232.4ms)
+Completed 200 OK in 10402ms (Views: 4277.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 01:01:42 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (112.7ms)
+Completed 500 Internal Server Error in 4838ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pp_object' for #<Array:0x00007febc72e1e58>):
+    1: <%= pretty_print @iex %>
+  
+app/views/application/index.html.erb:1:in `_app_views_application_index_html_erb___3176417107290355059_70325297598200'
+Started GET "/" for 127.0.0.1 at 2018-09-17 01:03:13 -0300
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 6044ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `symbol' for #<Hash:0x00007febc3fb0160>):
+  
+app/services/iextrading.rb:9:in `block in symbols'
+app/services/iextrading.rb:9:in `map'
+app/services/iextrading.rb:9:in `symbols'
+app/controllers/application_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-09-17 01:03:39 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 1793ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 01:03:50 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 1942ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 01:34:54 -0300
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `lastrange' for #<Iextrading:0x00007febc89001f8>
+Did you mean?  last_range):
+  
+app/services/iextrading.rb:17:in `batch_chart_request'
+app/controllers/application_controller.rb:5:in `index'
+Started GET "/" for 127.0.0.1 at 2018-09-17 01:35:05 -0300
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 964ms (ActiveRecord: 0.0ms)
+
+
+  
+RestClient::NotFound (404 Not Found):
+  
+app/services/iextrading.rb:14:in `batch_chart_request'
+app/controllers/application_controller.rb:5:in `index'
+Started GET "/" for 127.0.0.1 at 2018-09-17 01:35:23 -0300
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 1006ms (ActiveRecord: 0.0ms)
+
+
+  
+RestClient::NotFound (404 Not Found):
+  
+app/services/iextrading.rb:14:in `batch_chart_request'
+app/controllers/application_controller.rb:5:in `index'
+Started GET "/" for 127.0.0.1 at 2018-09-17 01:36:00 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1152ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 01:37:01 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1195ms (Views: 106.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 01:37:54 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1086ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-17 01:38:02 -0300
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 1059ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
