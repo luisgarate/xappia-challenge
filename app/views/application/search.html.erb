@@ -1,0 +1,31 @@
+<div id="wrapper">
+
+
+  <div id="content-wrapper">
+
+    <div class="container-fluid">
+
+      <br>
+      <div class="col-lg-12">
+        <div class="card mb-3">
+        <div class="card-header">
+          <i class="fas fa-chart-area"></i>
+          Volume Books Chart</div>
+        <div class="card-body">
+          <%= line_chart @charts_data.map { |k,v|
+              {name: k, data: v}
+          } %>
+
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+      </div>
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+
+</div>
