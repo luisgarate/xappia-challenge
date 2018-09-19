@@ -19,6 +19,6 @@ class ApplicationController < ActionController::Base
   end
 
   def set_symbols
-    @symbols = @iex.symbols.first(10)
+    @symbols = @iex.symbols
   end
 end
